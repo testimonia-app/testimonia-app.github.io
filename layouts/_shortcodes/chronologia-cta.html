@@ -1,0 +1,5 @@
+{{- $url := .Get "url" | relURL -}}
+{{- $label := .Get "label" | default "Open the guide" -}}
+<a class="btn btn-lg btn-primary mt-4" href="{{ $url }}">
+  {{ $label }} <span aria-hidden="true">→</span>
+</a>
